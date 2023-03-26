@@ -1,0 +1,214 @@
+:root {
+    font-size: 55%;
+
+    --fw--rg: 400;
+    --fw--sb: 600;
+    --fw--xl: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    all: unset;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+.right {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex a {
+    font-weight: var(--fw--xl);
+    font-size: 1.4rem;
+    color: #7C3AED;
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.container {
+    width: 38.4rem;
+    /* height: 100%; */
+    max-width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.header {
+    padding-block-start: 4rem;
+}
+
+.content {
+    margin-block-start: 6rem;
+}
+
+.intro {
+    margin-block-end: 4rem;
+}
+
+.intro--title {
+    font-size: 3.6rem;
+    font-weight: var(--fw--xl);
+    color: #1E293B;
+    line-height: 5.5rem;
+}
+
+.text--title {
+    font-size: 1.6rem;
+    font-weight: var(--fw--rg);
+    line-height: 2.4rem;
+    color: #475569;
+}
+
+.form {
+    display: grid;
+    gap: 1.6rem;
+}
+
+.input-wrapper>*:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.form-control {
+    position: relative;
+}
+
+.input-wrapper .form-control label {
+    font-size: 1.6rem;
+    font-weight: var(--fw--sb);
+    color: #1E293B;
+}
+
+.input-wrapper .form-control input {
+    display: block;
+    width: 100%;
+    padding: 1.6rem 1.2rem;
+    background: #FFFFFF;
+    border-radius: .4rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin-top: .8rem;
+}
+
+.input-wrapper .form-control input:is(:hover, :focus) {
+    border-color: #7C3AED;
+}
+
+.eyes {
+    position: absolute;
+    top: 5rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    padding: 1.2rem 2.4rem;
+    background-color: #7C3AED;
+    color: #fff;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    font-weight: var(--fw--xl);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:is(:hover, :focus-within) {
+    background-color: #9F67FF;
+}
+
+.subscrib {
+    font-weight: var(--fw--rg);
+    font-size: 1.6rem;
+    color: #475569;
+}
+
+.subscrib a {
+    text-decoration: none;
+    font-weight: var(--fw--xl);
+    color: #7C3AED;
+}
+
+@media(min-width: 800px) {
+    :root {
+        font-size: 60%;
+    }
+
+    main {
+        display: flex;
+        height: 100vh;
+    }
+
+    .left,
+    .right {
+        width: 50%;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .righ img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

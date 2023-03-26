@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="left">
+                <div class="container">
+                    <header class="header">
+                        <img src="img/logo.png" alt="logo" />
+                    </header>
+                    <div class="content">
+                        <div class="intro">
+                            <h1 class="intro--title">Acesse a plataforma</h1>
+                            <p class="text--title">
+                                Faça login ou registre-se para começar a construir seus projetos
+                                ainda hoje.
+                            </p>
+                        </div>
+
+                        <form class="form">
+                            <div class="input-wrapper">
+                                <div class="form-control">
+                                    <label for="iEmail">E-mail</label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="iEmail"
+                                        placeholder="digite seu email"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-control">
+                                    <div class="flex">
+                                        <label for="isenha">Senha</label>
+                                        <a href="#">Esqueceu a senha?</a>
+                                    </div>
+                                    <input
+                                        type="password"
+                                        name="senha"
+                                        id="isenha"
+                                        placeholder="digite sua senha"
+                                        autocomplete="off"
+                                        required
+                                    />
+                                    <img src="img/eye-off.svg" alt="icon" class="eyes" />
+                                    <img src="img/eye.svg" alt="icon" class="eyes hide" />
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn">Entrar</button>
+
+                            <p class="subscrib">
+                                Ainda não tem uma conta? <a href="#">Inscreva-se</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <img class="right" src="img/img.jpg" alt="bg" />
+        </main>
+    </body>
+</html>
